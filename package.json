@@ -1,25 +1,34 @@
 {
   "name": "eazybuild-reactpackage",
-  "version": "1.0.0",
-  "main": "dist/index.js",           
-  "module": "dist/index.js",        
-  "files": ["dist"],                 
+  "version": "1.0.1",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "files": [
+    "dist"
+  ],
   "description": "A reusable React components package.",
-  "keywords": ["react", "components", "UI", "eazybuild"],
+  "keywords": [
+    "react",
+    "components",
+    "UI",
+    "eazybuild"
+  ],
   "author": "Charles Bryan Oware",
   "license": "ISC",
   "scripts": {
-    "build": "babel src --out-dir dist --copy-files", 
-    "prepare": "npm run build",                       
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel src --out-dir dist --copy-files --extensions '.js,.jsx'",
+    "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "peerDependencies": {              
+  "peerDependencies": {
     "react": ">=16.8",
     "react-dom": ">=16.8"
   },
   "devDependencies": {
-    "@babel/cli": "^7.22.10",       
-    "@babel/preset-env": "^7.22.15", 
-    "@babel/preset-react": "^7.22.5" 
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.15",
+    "@babel/preset-react": "^7.22.5"
   }
 }
