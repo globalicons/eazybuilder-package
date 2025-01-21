@@ -1,6 +1,6 @@
 import { Card as AntCard } from 'antd';
-import { Container } from '../components/base/Container';
-import { Button } from '../components/base/Button';
+import { Container } from '../base/Container';
+import { Button } from '../base/Button';
 
 export const Card = ({ 
   title,

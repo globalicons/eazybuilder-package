@@ -1,10 +1,10 @@
 import React from 'react';
 import { useEditor } from '../../context/EditorContext';
-import { Button } from '../components/base/Button';
-import { Container } from '../components/base/Container';
-import { Card } from '../components/composite/Card';
-import { Image } from '../components/base/Image';
-import { Text } from '../components/base/Text';
+import { Button } from '../base/Button';
+import { Container } from '../base/Container';
+import { Card } from '../composite/Card';
+import { Image } from '../base/Image';
+import { Text } from '../base/Text';
 import { ElementWrapper } from './ElementWrapper';
 import { editorStyles } from '../../utils/styles';
 
