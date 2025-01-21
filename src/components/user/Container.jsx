@@ -1,7 +1,7 @@
 import { useNode } from "@craftjs/core";
 import { theme } from 'antd';
 
-export const Container = ({ background, padding = 0, children }) => {
+export const UserContainer = ({ background, padding = 0, children }) => {
   const {
     connectors: { connect, drag }, hasSelectedNode,
   } = useNode((state) => ({

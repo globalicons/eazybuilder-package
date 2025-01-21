@@ -2,7 +2,7 @@ import { useNode } from "@craftjs/core";
 import { useEffect, useState } from "react";
 import ContentEditable from "react-contenteditable";
 
-export const Text = ({ text, fontSize }) => {
+export const UserText = ({ text, fontSize }) => {
   const {
     connectors: { connect, drag },
     hasSelectedNode,

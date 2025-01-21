@@ -2,7 +2,7 @@ import React from "react";
 import { useEditor } from "@craftjs/core";
 import { Button as AntButton } from "antd";
 
-export const Delete = () => {
+export const UserDelete = () => {
   const { actions, query } = useEditor();
 
   const handleDelete = () => {

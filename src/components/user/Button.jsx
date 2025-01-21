@@ -3,7 +3,7 @@ import { useNode } from "@craftjs/core";
 import { useEffect, useState } from "react";
 import ContentEditable from "react-contenteditable";
 
-export const Button = ({ size, variant, color, children }) => {
+export const UserButton = ({ size, variant, color, children }) => {
   const {
     connectors: { connect, drag },
     hasSelectedNode,

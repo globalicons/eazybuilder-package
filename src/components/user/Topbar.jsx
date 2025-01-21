@@ -4,7 +4,7 @@ import { useEditor } from "@craftjs/core";
 import copy from "copy-to-clipboard";
 import lz from "lzutf8";
 
-export const Topbar = () => {
+export const UserTopbar = () => {
   const { actions, query, enabled } = useEditor((state) => ({
     enabled: state.options.enabled,
   }));

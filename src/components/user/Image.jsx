@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useNode } from "@craftjs/core";
 
-export const Image = ({ src }) => {
+export const UserImage = ({ src }) => {
   const [imageSrc, setImageSrc] = useState(src || ""); // Default to empty or provided source
   const {
     connectors: { connect, drag },

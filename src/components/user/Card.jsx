@@ -52,7 +52,7 @@ CardBottom.craft = {
   },
 };
 
-export const Card = ({ background, padding = 20 }) => {
+export const UserCard = ({ background, padding = 20 }) => {
   const {
     connectors: { connect },
     hasSelectedNode,
