@@ -39,7 +39,7 @@ export const UserText = ({ text, fontSize }) => {
   );
 }
 
-Text.craft = {
+UserText.craft = {
   rules: {
     canDrag: (node) => node.data.props.text != "Drag",
   },

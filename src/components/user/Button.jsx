@@ -49,7 +49,7 @@ export const UserButton = ({ size, variant, color, children }) => {
   );
 };
 
-Button.craft = {
+UserButton.craft = {
   displayName: "Button",
   rules: {
     canDrag: true,

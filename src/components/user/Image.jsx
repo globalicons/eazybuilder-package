@@ -52,7 +52,7 @@ export const UserImage = ({ src }) => {
   );
 };
 
-Image.craft = {
+UserImage.craft = {
   rules: {
     canDrag: true,
   },

@@ -86,6 +86,6 @@ export const UserCard = ({ background, padding = 20 }) => {
   );
 };
 
-Card.craft = {
+UserCard.craft = {
   displayName: "Card",
 };

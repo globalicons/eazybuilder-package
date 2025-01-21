@@ -28,6 +28,6 @@ export const UserContainer = ({ background, padding = 0, children }) => {
   );
 };
 
-Container.craft = {
+UserContainer.craft = {
   displayName: 'Container',
 };   
