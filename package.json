@@ -14,13 +14,7 @@
     "eazybuild"
   ],
   "author": "Charles Bryan Oware",
-  "license": "ISC",
-  "scripts": {
-    "clean": "rm -rf dist",
-    "build": "npm run clean && babel src --out-dir dist --copy-files --extensions '.js,.jsx'",
-    "prepare": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "license": "ISC", 
   "peerDependencies": {
     "react": ">=16.8",
     "react-dom": ">=16.8"
