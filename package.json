@@ -1,11 +1,8 @@
 {
   "name": "eazybuild-reactpackage",
   "version": "1.0.1",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "main": "src/index.js",
+  "module": "src/index.js",
   "description": "A reusable React components package.",
   "keywords": [
     "react",
