@@ -1,8 +1,8 @@
 {
   "name": "eazybuild-reactpackage",
   "version": "1.0.1",
-  "main": "src/index.js",
-  "module": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "description": "A reusable React components package.",
   "keywords": [
     "react",
@@ -12,6 +12,12 @@
   ],
   "author": "Charles Bryan Oware",
   "license": "ISC", 
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel src --out-dir dist --copy-files",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "peerDependencies": {
     "react": ">=16.8",
     "react-dom": ">=16.8"
