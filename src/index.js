@@ -21,5 +21,5 @@ export { default as UserDelete } from './components/user/Delete';
 export { default as UserImage } from './components/user/Image';
 export { default as UserText } from './components/user/Text';
 export { default as UserTopbar } from './components/user/Topbar';
-export { default as UserToolbox } from './components/user/Toolbox';
-export { default as ErrorBoundary } from './components/user/ErrorBoundary';
+export { default as UserToolbox } from './components/editor/Toolbox';
+export { default as ErrorBoundary } from './components/ErrorBoundary';
