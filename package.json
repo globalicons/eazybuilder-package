@@ -23,8 +23,8 @@
   "peerDependencies": { 
     "antd": "^5.23.2",
     "@ant-design/icons": "^5.6.0",
-    "react": "16.8.0 || ^17 || ^18",
-    "react-dom": "16.8.0 || ^17 || ^18"
+    "react": "16.8.0 || ^17 || ^18 || ^19",
+    "react-dom": "16.8.0 || ^17 || ^18 || ^19"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.10",
