@@ -12,7 +12,6 @@ export { Card } from './components/composite/Card';
 export { Canvas } from './components/editor/Canvas';
 export { ElementWrapper } from './components/editor/ElementWrapper';
 export { Toolbox } from './components/editor/Toolbox';
-export { Topbar } from './components/editor/Topbar';
 
 // Export components from user
 export { UserButton } from './components/user/Button';
@@ -21,4 +20,3 @@ export { UserContainer } from './components/user/Container';
 export { UserDelete } from './components/user/Delete';
 export { UserImage } from './components/user/Image';
 export { UserText } from './components/user/Text';
-export { UserTopbar } from './components/user/Topbar';
