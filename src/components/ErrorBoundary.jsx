@@ -1,7 +1,7 @@
 import React from 'react';
 import { Alert } from 'antd';
 
-export class ErrorBoundary extends React.Component {
+class ErrorBoundary extends React.Component {
   constructor(props) {
     super(props);
     this.state = { hasError: false };
@@ -25,3 +25,5 @@ export class ErrorBoundary extends React.Component {
     return this.props.children;
   }
 } 
+
+export default ErrorBoundary

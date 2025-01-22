@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 import { Button as AntDButton } from "antd";
 import { componentPropTypes } from '../../types/propTypes';
 

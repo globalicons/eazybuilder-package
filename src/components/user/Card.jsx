@@ -1,7 +1,7 @@
 // components/user/Card.js
-import { Text } from "./Text";
-import { Button } from "./Button";
-import { Container } from "./Container";
+import { UserText } from "./Text";
+import { UserButton } from "./Button";
+import { UserContainer } from "./Container";
 import { Element, useNode } from "@craftjs/core";
 import { Card as AntCard } from 'antd';
 import { useEffect, useState } from "react";
@@ -28,7 +28,7 @@ CardTop.craft = {
   rules: {
     // Only accept Text
     canMoveIn: (incomingNodes) =>
-      incomingNodes.every((incomingNode) => incomingNode.data.type === Text),
+      incomingNodes.every((incomingNode) => incomingNode.data.type === UserText),
   },
 };
 
@@ -48,7 +48,7 @@ CardBottom.craft = {
   rules: {
     // Only accept Buttons
     canMoveIn: (incomingNodes) =>
-      incomingNodes.every((incomingNode) => incomingNode.data.type === Button),
+      incomingNodes.every((incomingNode) => incomingNode.data.type === UserButton),
   },
 };
 
@@ -74,13 +74,13 @@ export const UserCard = ({ background, padding = 20 }) => {
         <Text text="Title" fontSize={20} />
         <Text text="Subtitle" fontSize={15} />
       </Element>
-      <Element id="buttons" is={Container} canvas padding={12}>
-        <Button size="small" type="primary">
+      <Element id="buttons" is={UserContainer} canvas padding={12}>
+        <UserButton size="small" type="primary">
           Learn more
-        </Button>
-        <Button size="small" type="default">
+        </UserButton>
+        <UserButton size="small" type="default">
           Cancel
-        </Button>
+        </UserButton>
       </Element>
     </AntCard>
   );

@@ -22,4 +22,3 @@ export { UserDelete } from './components/user/Delete';
 export { UserImage } from './components/user/Image';
 export { UserText } from './components/user/Text';
 export { UserTopbar } from './components/user/Topbar';
-export { ErrorBoundary } from './components/ErrorBoundary';
