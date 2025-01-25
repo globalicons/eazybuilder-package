@@ -1,4 +1,4 @@
-// components/user/Card.js
+import React from "react";
 import { UserText } from "./Text";
 import { UserButton } from "./Button";
 import { UserContainer } from "./Container";
