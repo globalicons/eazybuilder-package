@@ -1,6 +1,7 @@
 import { Button as AntButton, Typography, Space, Card } from "antd";
 import { useEditor } from "../../context/EditorContext";
-import { nanoid } from 'nanoid';
+import { v4 as uuidv4 } from 'uuid';
+
 
 const { Title } = Typography;
 
@@ -36,7 +37,7 @@ export const Toolbox = () => {
   const handleAddComponent = (componentType) => {
     const component = AVAILABLE_COMPONENTS[componentType];
     addElement({
-      id: nanoid(),
+      id: uuidv4(),
       ...component,
       position: { x: 20, y: 20 }
     });

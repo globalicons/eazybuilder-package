@@ -43,12 +43,15 @@
   },
   "dependencies": {
     "@craftjs/core": "^0.2.11",
+    "@rollup/plugin-replace": "^6.0.2",
     "copy-to-clipboard": "^3.3.3",
     "crypto-browserify": "^3.12.1",
     "lzutf8": "^0.6.3",
-    "nanoid": "^5.0.9",
+    "process": "^0.11.10",
     "prop-types": "^15.8.1",
     "react-contenteditable": "^3.3.7",
-    "react-draggable": "^4.4.6"
+    "react-draggable": "^4.4.6",
+    "stream-browserify": "^3.0.0",
+    "uuid": "^11.0.5"
   }
 }
