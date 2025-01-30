@@ -1,4 +1,4 @@
-import { createContext, useContext, useReducer, useState } from 'react';
+import React, { createContext, useContext, useReducer, useState } from 'react';
 
 // Create the context
 const EditorContext = createContext();
