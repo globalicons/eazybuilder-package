@@ -1,3 +1,4 @@
+import { createRequire } from 'module';
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
@@ -5,7 +6,8 @@ import terser from '@rollup/plugin-terser';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import json from '@rollup/plugin-json';
 
-import pkg from './package.json' assert { type: 'json' };
+const require = createRequire(import.meta.url);
+const pkg = require('./package.json');
 
 export default {
   input: 'src/index.js',
