@@ -1,5 +1,5 @@
 {
-  "name": "@globalicons/eazybuilder-package",
+  "name": "eazybuilder-package",
   "version": "1.0.1",
   "main": "dist/index.cjs.js",
   "repository": {
