@@ -1,5 +1,7 @@
-// Export components from base
+// Export context providers
+export { EditorProvider  } from './context/EditorContext';
 
+// Export components from base
 export { Button } from './components/base/Button';
 export { Container } from './components/base/Container';
 export { Image } from './components/base/Image';
