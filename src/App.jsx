@@ -1,3 +1,4 @@
+import React from "react";
 import { Layout } from 'antd';
 import { EditorProvider } from './context/EditorContext';
 import { Toolbox } from './components/editor/Toolbox';

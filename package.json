@@ -1,7 +1,15 @@
 {
-  "name": "eazybuild-reactpackage",
+  "name": "@globalicons/eazybuilder-package",
   "version": "1.0.1",
   "main": "dist/index.cjs.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/globalicons/eazybuilder-package.git"
+  },
+  "type": "module",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "module": "dist/index.esm.js",
   "files": [
     "dist"
@@ -16,7 +24,7 @@
   "author": "Charles Bryan Oware",
   "license": "ISC",
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "rimraf dist",
     "build": "npm run clean && rollup -c",
     "prepare": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,8 +32,8 @@
   "peerDependencies": {
     "@ant-design/icons": "^5.6.0",
     "antd": "^5.23.2",
-    "react": "16.8.0 || ^17 || ^18 || ^19",
-    "react-dom": "16.8.0 || ^17 || ^18 || ^19"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.10",
@@ -38,6 +46,7 @@
     "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-terser": "^0.4.4",
+    "rimraf": "^5.0.10",
     "rollup": "^4.31.0",
     "rollup-plugin-peer-deps-external": "^2.2.4"
   },
